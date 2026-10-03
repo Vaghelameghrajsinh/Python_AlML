@@ -1,0 +1,27 @@
+introduction of pythone : 
+
+code/instruction ---> Translator/ Compiler/interpreter : Machine 
+
+
+1. Our first python program :
+
+print("hello world"); hello world ko print krega : 
+
+// dp : 
+
+num1 = float(input('Enter first number : '))
+num2 = float(input("Enter second number : "))
+
+sum = num1+num2
+print(sum)
+
+
+num1 = float(input("Enter side of a square : "))
+area = num1 * num1
+print("area of square is : ",area)
+
+
+
+num1 = int(input("Enter first number : "))
+num2 = int(input("Enter second number : "))
+print(num1>=num2)
