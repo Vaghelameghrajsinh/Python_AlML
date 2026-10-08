@@ -25,3 +25,137 @@ print("area of square is : ",area)
 num1 = int(input("Enter first number : "))
 num2 = int(input("Enter second number : "))
 print(num1>=num2)
+
+
+
+name = input("Enter your name : ")
+print(len(name))
+
+
+str = "$JDNDJWK$$HBWBJHHD$$HBWDW$BS$BW$"
+
+print(str.count("$"))
+
+
+num = 5
+
+if(num > 2):
+    print("Greater than 2 ")
+elif(num>3):
+    print("Greater than 3")
+
+
+# garde of student based on marks :  ,  
+
+marks = int(input("Enter your maeks : "))
+grade = None
+
+if(marks >= 90):
+    grade = "A"
+elif(marks >=80 and marks <90):
+    grade = "B"    
+elif(marks >=70 and marks < 80):
+    grade = 'C'
+else:
+    grade = "D"
+
+print(grade)
+
+    
+
+#indentation : proper spacing
+
+
+age = 99
+
+if(age>=18):
+    if(age>=80):
+        print("Cannot drive")
+    else:
+        print("Drive")
+else:
+    print("cannot drive")
+
+
+    num = int(input("Enter number : "))
+
+if(num % 2 == 0):
+    print("number is even")
+else :
+    print("number is odd")
+
+
+    num1 = int(input("Enter first number : "))
+num2 = int(input("Enter second number : "))
+num3 = int(input("Enter third number : "))
+
+if(num1>=num2):
+    if(num1>=num3):
+        print(num1 )
+    else:
+        print(num3)    
+else:
+    if(num2>=num3):
+        print(num2)
+    else:
+        print(num3)
+ 
+
+num = int(input("Enter number : ")) 
+
+if(num % 7 ==0):
+    print("divided by 7")
+else :
+    print("not divided by 7") 
+
+
+    #python : list and tuple : 
+
+
+marks1 = 23
+marks2 = 11
+marks3 = 67
+marks4 = 89
+marks5 = 99
+
+marks = [23,11,67,89,99]
+print(marks)  
+
+
+student  = ['Vaghela',12 ,23.34]
+
+print(student)
+
+student[0] = "meghrajsinh"
+print(student)
+
+marks = [85,43,56,'hello']
+
+print(marks[-4:])
+
+
+
+name = "Shradha"
+age = 22
+price = 22.5
+
+list = [12,23,6,"hello world",23.34]
+
+tuple = (23,23,'hello wolrd',34.34)
+
+
+dict = {
+
+    'key' : "value",
+    'name' : "vaghela Meghrajsinh"
+}
+
+
+
+
+print(type(name)) #str
+print(type(age)) #int 
+print(type(price)) #float
+print(type(list)) #list
+print(type(tuple)) #tuple
+print(type(dict)) #dict
