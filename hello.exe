@@ -138,6 +138,8 @@ print(marks[-4:])
 name = "Shradha"
 age = 22
 price = 22.5
+isFollowed = True
+a = None
 
 list = [12,23,6,"hello world",23.34]
 
@@ -150,12 +152,241 @@ dict = {
     'name' : "vaghela Meghrajsinh"
 }
 
-
-
-
 print(type(name)) #str
 print(type(age)) #int 
 print(type(price)) #float
+print(type(isFollowed)) # boolean
+print(type(a)) # None
 print(type(list)) #list
 print(type(tuple)) #tuple
 print(type(dict)) #dict
+
+
+
+
+"""
+#data type in python :
+
+1.  interger : 1,2,3,4,5
+2.  string : "hello" , "World"
+3.  float  : 1.0 , 2.45 ,3543.434
+4.  boolean : True , False
+5.  None   : a = None : a ko abhi koi bhi value assign nhi hai 
+6.  list : [1,2,34,4]
+7.  tuple : (23,24234,3.34)
+8.  dict  : {}
+9 . set  
+
+"""
+
+
+# python is case Sensitive language : 
+
+a and A are different : 
+
+# python is dynamiclly typed language : 
+
+variable ke naam k aage dataType write krna nhi hai : 
+
+
+a = int(input("Enter a : "))
+
+b = int(input("Enter b : "))
+
+sum = a+b
+sub = a-b
+mul = a*b
+div = a/b
+
+print(sum)
+print(sub)
+print(mul)
+print(div)
+
+
+
+a = 3
+b = 2
+
+print(a==b) #False
+print(a>=b) #True
+print(a<=b) #False
+print(a>b) #True
+print(a<b) #False
+print(a!=b) #True
+
+
+
+
+a = 3
+print(a)
+a = a + 2  # a += 2
+a = a - 2  # a -= 2
+a = a * 2  # a *= 2
+a = a / 2  # a /= 2
+a = a % 2  # a %= 2
+
+
+a = 6
+b = 2
+print(a/b)
+
+
+print(2**3) # 2 ki power 3 == 8 
+
+
+
+print((3>2) and (2<3)) # True
+and     
+or 
+not 
+
+
+
+# type conversion :
+
+a = 2
+b = 4.25
+sum = a+b  # 2.0 + 4.25
+print(a+b)
+
+
+# type casting : # manually 
+
+r = '4'
+s = 3
+l = r+s # error :
+
+string r ko int me convert krooo 
+
+r = int(r)
+l = r+s 
+
+
+note : String me String me add kr skte hai 
+but int ya float ko string me convert nhi kr skte 
+hme string ko type casting krke int/float me convert krna hoga :
+
+a = int('shradha') #  error :
+
+
+a = 3.14
+print(a)
+print(type(a))
+
+a = str(a)
+print(a)
+print(type(a))
+
+
+name = input("Enter your name : ")
+print(name)
+
+
+age = int(input("Enter your age : "))
+print(age)
+
+number = float(input("Enter your number : "))
+print(number)
+
+print("My name is ",name,"I am ",age,"old",number)
+
+
+val = input("Enter some value : ")
+print(type(val),val) # string and
+
+
+a = int(input("Enter a : "))
+b = int(input("Enter b : "))
+
+sum = a+b
+print("The sum is :",sum)
+
+
+# logical operators : 
+
+print(True and True) # True
+print(True and False) # False
+print(False and True) # False
+print(False and False) # False
+
+print("\n")
+
+print(True or True) # True
+print(True or False) # True
+print(False or True) # True
+print(False or False) # False
+
+print("\n")
+
+print(not True) # False
+print(not False) # True
+ 
+ 
+# logical operators : 
+
+print(True and True) # True
+print(True and False) # False
+print(False and True) # False
+print(False and False) # False
+
+print("\n")
+
+print(True or True) # True
+print(True or False) # True
+print(False or True) # True
+print(False or False) # False
+
+print("\n")
+
+print(not True) # False
+print(not False) # True
+ 
+ # string : String is dataType stores sequence of character 
+
+str = "This 'is' a String"
+str2 = """This "is" a String"""
+str3 = 'This is a string'
+print(str)
+print(str2)
+print(str3)
+print(type(str))
+
+
+
+# indexing in String : str[something] 
+# to access character in a string
+
+str = 'hello world'
+
+# ye errroe degga : to index ko assign nhi manupilated nhi kra skte : 
+
+print(str[0])
+print(str[1])
+print(str[2])
+print(str[3])
+print(str[4])
+print(str[5])
+print(str[6])
+print(str[7])
+print(str[8])
+print(str[9])
+print(str[10])
+
+
+#   Slicing : to return part of string : 
+#      02345678910
+str = "Hello world"
+
+print(str[0:11]) # last character is excluded 
+print(str[0:len(str)])
+
+print(str[:len(str)])  # same as 0:len(str)
+print(str[0:]) # same as 0:len(str)
+
+# -ve indexing :
+
+#      54321 (in -ve)
+str = "Apple"
+
+print(str[-5:-4])
